@@ -1,15 +1,24 @@
 
-
 class Solution:
     def seriesSum(self, n : int) -> int:
-        # code here
-      # code here
-        # k=1
-        # for i in range(n):
-        #     k+=i+1
-        # # return k
-        # k = sum(x + 1 for x in range(n))
-        # return(k)
-        k = (n * (n + 1)) // 2
-        return(k)   
+        # #code here
+           i=1
+        sum=0
+        while(i<=n):
+            sum=sum+i
+            i=i+1
+        return sum
+#{ 
+ # Driver Code Starts
+if __name__ == '__main__':
+    t = int(input())
+    for _ in range(t):
 
+        n = int(input())
+
+        obj = Solution()
+        res = obj.seriesSum(n)
+
+        print(res)
+
+# } Driver Code Ends
